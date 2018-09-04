@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <form method='POST' action='/hr'>
+      <input type='submit' value='Toggle' />
+    </form>
+    <button>Log value to console
+    <script>
+    document.querySelector('button').addEventListener('click', function() {
+      var get = new XMLHttpRequest();
+      get.onload = function() { console.log(this.responseText); };
+      get.open('get', '/hr', true);
+      get.send();
+    });
+    </script>
+  </body>
+</html>

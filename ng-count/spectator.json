@@ -1,0 +1,8 @@
+{
+  "type": "browser",
+  "src": [
+    "lib/angular.min.js",
+    "ng-count.js"
+  ],
+  "tests": []
+}
